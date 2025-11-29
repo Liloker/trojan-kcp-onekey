@@ -5,9 +5,14 @@ set -e
 TROJAN_DIR="/root/trojan-go"
 KCPTUN_DIR="/usr/local/kcptun"
 TROJAN_VERSION="v0.10.6"
-KCPTUN_VERSION="v20230214"   # 示例版本，可按需改
+
+# 这里改成最新版本号（不带 v）
+KCPTUN_VERSION="20251124"
+
 TROJAN_BIN_URL="https://github.com/p4gefau1t/trojan-go/releases/download/${TROJAN_VERSION}/trojan-go-linux-amd64.zip"
-KCPTUN_TAR_URL="https://github.com/xtaci/kcptun/releases/download/${KCPTUN_VERSION}/kcptun-linux-amd64-${KCPTUN_VERSION}.tar.gz"
+
+# 注意：tag 前面要带 v，文件名中不要带 v
+KCPTUN_TAR_URL="https://github.com/xtaci/kcptun/releases/download/v${KCPTUN_VERSION}/kcptun-linux-amd64-${KCPTUN_VERSION}.tar.gz"
 
 # ========= 必须是 root =========
 if [ "$(id -u)" -ne 0 ]; then
