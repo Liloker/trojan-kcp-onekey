@@ -152,7 +152,7 @@ User=root
 Group=root
 # 丢弃所有输出，等价于 nohup ... >/dev/null 2>&1 &
 StandardOutput=null
-StandardError=null
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
