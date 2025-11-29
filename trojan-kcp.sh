@@ -7,7 +7,7 @@ KCPTUN_DIR="/usr/local/kcptun"
 TROJAN_VERSION="v0.10.6"
 
 # 这里改成最新版本号（不带 v）
-KCPTUN_VERSION="20251124"
+KCPTUN_VERSION="20240107"
 
 TROJAN_BIN_URL="https://github.com/p4gefau1t/trojan-go/releases/download/${TROJAN_VERSION}/trojan-go-linux-amd64.zip"
 
